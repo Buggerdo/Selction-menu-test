@@ -28,7 +28,6 @@ namespace test
 
             int slection = 1;
             int sort = 1;
-            //string search = "test";
             StringBuilder search = new();
 
             do
@@ -42,7 +41,6 @@ namespace test
                 {
                     filteredPeople.Add(person);
                 }
-
 
                 // Chooses the sort type 
                 if(sort == 1)
@@ -68,7 +66,7 @@ namespace test
                     || x.LastName.Contains(search.ToString(), StringComparison.OrdinalIgnoreCase)
                     || x.Age.ToString().Contains(search.ToString(), StringComparison.OrdinalIgnoreCase)).ToList();
                 }
-
+                Console.WriteLine();
                 foreach(Person item in filteredPeople)
                 {
                     if(index == slection)

@@ -15,5 +15,9 @@
             ID = id;
             id++;
         }
+        public override string ToString()
+        {
+            return $"{Name} {LastName} {Age}";
+        }
     }
 }
